@@ -2,14 +2,12 @@ syntax="proto3";
 
 package kilight.protocol;
 
-import "kilight/protocol/SystemStateRequest.proto";
-import "kilight/protocol/SystemInfoRequest.proto";
-import "kilight/protocol/OutputWriteRequest.proto";
+import "kilight/protocol/GetData.proto";
+import "kilight/protocol/WriteOutput.proto";
 
 message Request {
     oneof request_type {
-        SystemStateRequest systemState = 1;
-        SystemInfoRequest systemInfo = 2;
-        OutputWriteRequest outputWrite = 3;
+        GetData getData = 1;
+        WriteOutput writeOutput = 2;
     }
 }

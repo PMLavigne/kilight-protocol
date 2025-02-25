@@ -6,7 +6,7 @@ package kilight.protocol;
 
 import "kilight/protocol/VersionInfo.proto";
 
-message SystemInfoResponse
+message SystemInfo
 {
     string hardwareId = 1 [(EmbeddedProto.options).maxLength = 16];
     string model = 2 [(EmbeddedProto.options).maxLength = 32];

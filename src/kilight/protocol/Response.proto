@@ -2,14 +2,14 @@ syntax="proto3";
 
 package kilight.protocol;
 
-import "kilight/protocol/SystemStateResponse.proto";
-import "kilight/protocol/SystemInfoResponse.proto";
-import "kilight/protocol/OutputWriteResponse.proto";
+import "kilight/protocol/SystemState.proto";
+import "kilight/protocol/SystemInfo.proto";
+import "kilight/protocol/CommandResult.proto";
 
 message Response {
     oneof response_type {
-        SystemStateResponse systemState = 1;
-        SystemInfoResponse systemInfo = 2;
-        OutputWriteResponse outputWrite = 3;
+        SystemState systemState = 1;
+        SystemInfo systemInfo = 2;
+        CommandResult commandResult = 3;
     }
 }

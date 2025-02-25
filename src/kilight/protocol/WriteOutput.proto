@@ -5,7 +5,7 @@ package kilight.protocol;
 import "kilight/protocol/Color.proto";
 import "kilight/protocol/OutputIdentifier.proto";
 
-message OutputWriteRequest
+message WriteOutput
 {
     OutputIdentifier outputId = 1;
     Color color = 2;

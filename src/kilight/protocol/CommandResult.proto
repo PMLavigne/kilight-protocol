@@ -2,7 +2,7 @@ syntax="proto3";
 
 package kilight.protocol;
 
-message OutputWriteResponse
+message CommandResult
 {
     enum Result {
         OK = 0;

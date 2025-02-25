@@ -3,19 +3,18 @@ set(PROTO_OUT_DIR "${CMAKE_CURRENT_BINARY_DIR}/generated")
 
 add_library(kilight-protocol INTERFACE
         kilight/protocol/Color.proto
+        kilight/protocol/CommandResult.proto
         kilight/protocol/FanState.proto
+        kilight/protocol/GetData.proto
         kilight/protocol/OutputIdentifier.proto
         kilight/protocol/OutputState.proto
-        kilight/protocol/OutputWriteRequest.proto
-        kilight/protocol/OutputWriteResponse.proto
         kilight/protocol/Request.proto
         kilight/protocol/Response.proto
-        kilight/protocol/SystemInfoRequest.proto
-        kilight/protocol/SystemInfoResponse.proto
-        kilight/protocol/SystemStateRequest.proto
-        kilight/protocol/SystemStateResponse.proto
+        kilight/protocol/SystemInfo.proto
+        kilight/protocol/SystemState.proto
         kilight/protocol/SystemTemperatures.proto
         kilight/protocol/VersionInfo.proto
+        kilight/protocol/WriteOutput.proto
 )
 
 target_include_directories(kilight-protocol INTERFACE

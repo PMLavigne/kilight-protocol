@@ -3,6 +3,6 @@ syntax="proto3";
 package kilight.protocol;
 
 enum GetData {
-    SystemState = 0;
-    SystemInfo = 1;
+    GetSystemState = 0;
+    GetSystemInfo = 1;
 }
